@@ -1,0 +1,68 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "ahmmoust@publicisgroupe.net",
+        "principalSubject": "user:ahmmoust@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "167.246.65.2",
+        "callerSuppliedUserAgent": "(gzip),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-01-07T20:11:20.643714045Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "workflows.googleapis.com",
+      "methodName": "google.cloud.workflows.v1.Workflows.UpdateWorkflow",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-ahmmoust-87ad/locations/us-east4/workflows/ahmed-test",
+          "permission": "workflows.workflows.update",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "workflows.googleapis.com",
+            "name": "projects/prj-se-ahmmoust-87ad/locations/us-east4/workflows/ahmed-test",
+            "type": "workflows.googleapis.com/Workflow"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-ahmmoust-87ad/locations/us-east4/workflows/ahmed-test",
+      "request": {
+        "workflow": {
+          "name": "projects/prj-se-ahmmoust-87ad/locations/us-east4/workflows/ahmed-test"
+        },
+        "@type": "type.googleapis.com/google.cloud.workflows.v1.UpdateWorkflowRequest",
+        "update_mask": {}
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-east4"
+        ]
+      }
+    },
+    "insertId": "ivwhxcdfmy1",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "workflows.googleapis.com",
+        "project_id": "prj-se-ahmmoust-87ad",
+        "method": "google.cloud.workflows.v1.Workflows.UpdateWorkflow"
+      }
+    },
+    "timestamp": "2025-01-07T20:11:20.774945881Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-ahmmoust-87ad/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/prj-se-ahmmoust-87ad/locations/us-east4/operations/operation-1736280680645-62b23593344c2-1baa17f8-64d269db",
+      "producer": "workflows.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-01-07T20:11:21.434353485Z"
+  }
