@@ -1,0 +1,70 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "bhakti-sa@prj-se-bhachikh-3fec.iam.gserviceaccount.com",
+        "serviceAccountDelegationInfo": [
+          {
+            "firstPartyPrincipal": {
+              "principalEmail": "bhachikh@publicisgroupe.net"
+            }
+          }
+        ],
+        "principalSubject": "serviceAccount:bhakti-sa@prj-se-bhachikh-3fec.iam.gserviceaccount.com"
+      },
+      "requestMetadata": {
+        "callerIp": "103.88.86.81",
+        "callerSuppliedUserAgent": "(gzip),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-01-17T14:15:47.398719Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.metricsscope.v1.MetricsScopes.CreateMonitoredProject",
+      "authorizationInfo": [
+        {
+          "resource": "projects/752027211781",
+          "permission": "monitoring.metricsScopes.link",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projects/664869673844",
+          "permission": "monitoring.metricsScopes.link",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "locations/global/metricsScopes/664869673844/projects/752027211781",
+      "request": {
+        "parent": "locations/global/metricsScopes/prj-se-bhachikh-3fec",
+        "monitoredProject": {
+          "name": "locations/global/metricsScopes/prj-se-bhachikh-3fec/projects/prj-se-ravavula-8fcb"
+        },
+        "@type": "type.googleapis.com/google.monitoring.metricsscope.v1.CreateMonitoredProjectRequest"
+      }
+    },
+    "insertId": "1q6thrqf1l5g35",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.monitoring.metricsscope.v1.MetricsScopes.CreateMonitoredProject",
+        "service": "monitoring.googleapis.com",
+        "project_id": "prj-se-bhachikh-3fec"
+      }
+    },
+    "timestamp": "2025-01-17T14:15:45.455078Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-bhachikh-3fec/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/dc2be935-5133-4217-9371-e855216f3ec8",
+      "producer": "monitoring.googleapis.com",
+      "first": true,
+      "last": true
+    },
+    "receiveTimestamp": "2025-01-17T14:15:48.134911023Z"
+  }
