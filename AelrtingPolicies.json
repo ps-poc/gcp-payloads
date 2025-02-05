@@ -1,0 +1,117 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "bhachikh@publicisgroupe.net",
+        "principalSubject": "user:bhachikh@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "2401:4900:5039:bb11:dff:a3b4:5e16:b0a5",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-05T07:52:59.677483440Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-bhachikh-3fec",
+          "permission": "monitoring.alertPolicies.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "monitoring.googleapis.com",
+            "name": "projects/664869673844/alertPolicies",
+            "type": "monitoring.googleapis.com/AlertPolicy"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-bhachikh-3fec",
+      "request": {
+        "name": "projects/prj-se-bhachikh-3fec",
+        "@type": "type.googleapis.com/google.monitoring.v3.CreateAlertPolicyRequest",
+        "alertPolicy": {
+          "severity": "SEVERITY_UNSPECIFIED",
+          "enabled": true,
+          "conditions": [
+            {
+              "conditionThreshold": {
+                "aggregations": [
+                  {
+                    "alignmentPeriod": "300s",
+                    "crossSeriesReducer": "REDUCE_NONE",
+                    "perSeriesAligner": "ALIGN_RATE"
+                  }
+                ],
+                "thresholdValue": 0,
+                "filter": "resource.type = \"gce_instance\" AND metric.type = \"compute.googleapis.com/instance/cpu/usage_time\"",
+                "trigger": {
+                  "count": 1
+                },
+                "comparison": "COMPARISON_GT",
+                "duration": "0s"
+              },
+              "displayName": "VM Instance - CPU usage"
+            }
+          ],
+          "notificationChannels": [
+            "projects/prj-se-bhachikh-3fec/notificationChannels/6175338781029990683"
+          ],
+          "combiner": "OR",
+          "displayName": "Testing-crossprj-notificationch"
+        }
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.monitoring.v3.AlertPolicy",
+        "combiner": "OR",
+        "notificationChannels": [
+          "projects/prj-se-bhachikh-3fec/notificationChannels/6175338781029990683"
+        ],
+        "conditions": [
+          {
+            "name": "projects/prj-se-bhachikh-3fec/alertPolicies/6793500165896326733/conditions/6793500165896325058",
+            "conditionThreshold": {
+              "comparison": "COMPARISON_GT",
+              "aggregations": [
+                {
+                  "perSeriesAligner": "ALIGN_RATE",
+                  "alignmentPeriod": "300s"
+                }
+              ],
+              "trigger": {
+                "count": 1
+              },
+              "filter": "resource.type = \"gce_instance\" AND metric.type = \"compute.googleapis.com/instance/cpu/usage_time\"",
+              "duration": "0s"
+            },
+            "displayName": "VM Instance - CPU usage"
+          }
+        ],
+        "enabled": true,
+        "name": "projects/prj-se-bhachikh-3fec/alertPolicies/6793500165896326733",
+        "displayName": "Testing-crossprj-notificationch",
+        "mutationRecord": {
+          "mutatedBy": "bhachikh@publicisgroupe.net"
+        },
+        "creationRecord": {
+          "mutatedBy": "bhachikh@publicisgroupe.net"
+        }
+      }
+    },
+    "insertId": "ivf8j0f3g8knw",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "prj-se-bhachikh-3fec",
+        "service": "monitoring.googleapis.com",
+        "method": "google.monitoring.v3.AlertPolicyService.CreateAlertPolicy"
+      }
+    },
+    "timestamp": "2025-02-05T07:52:59.665484727Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-bhachikh-3fec/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2025-02-05T07:53:02.524340787Z"
+  }
