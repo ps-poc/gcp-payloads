@@ -1,0 +1,78 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "bhachikh@publicisgroupe.net",
+        "principalSubject": "user:bhachikh@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "103.88.86.86",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-12T12:15:54.689094801Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.v3.UptimeCheckService.CreateUptimeCheckConfig",
+      "authorizationInfo": [
+        {
+          "resource": "664869673844",
+          "permission": "monitoring.uptimeCheckConfigs.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-bhachikh-3fec",
+      "request": {
+        "@type": "type.googleapis.com/google.monitoring.v3.CreateUptimeCheckConfigRequest",
+        "parent": "projects/prj-se-bhachikh-3fec",
+        "uptimeCheckConfig": {
+          "displayName": "dispaynameUptimetest",
+          "period": "60s",
+          "syntheticMonitor": {
+            "cloudFunctionV2": {
+              "name": "projects/prj-se-bhachikh-3fec/locations/us-central1/functions/function-01-GEN"
+            }
+          }
+        }
+      },
+      "response": {
+        "name": "projects/prj-se-bhachikh-3fec/uptimeCheckConfigs/dispaynameuptimetest-WKn-4PWccSc",
+        "displayName": "dispaynameUptimetest",
+        "timeout": "30s",
+        "syntheticMonitor": {
+          "cloudFunctionV2": {
+            "cloudRunRevision": {
+              "labels": {
+                "revision_name": "",
+                "service_name": "function-01-gen",
+                "project_id": "prj-se-bhachikh-3fec",
+                "location": "us-central1",
+                "configuration_name": ""
+              },
+              "type": "cloud_run_revision"
+            },
+            "name": "projects/prj-se-bhachikh-3fec/locations/us-central1/functions/function-01-GEN"
+          }
+        },
+        "@type": "type.googleapis.com/google.monitoring.v3.UptimeCheckConfig",
+        "period": "60s"
+      }
+    },
+    "insertId": "1ei2672e1860c",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "prj-se-bhachikh-3fec",
+        "service": "monitoring.googleapis.com",
+        "method": "google.monitoring.v3.UptimeCheckService.CreateUptimeCheckConfig"
+      }
+    },
+    "timestamp": "2025-02-12T12:15:54.680959313Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-bhachikh-3fec/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2025-02-12T12:15:55.753274799Z"
+  }
