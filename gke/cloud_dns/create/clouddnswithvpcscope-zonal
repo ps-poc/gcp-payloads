@@ -1,0 +1,184 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "arudhar1@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "2401:4900:1c43:ca44:ccb5:74f:3528:fd01",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "container.googleapis.com",
+      "methodName": "google.container.v1beta1.ClusterManager.CreateCluster",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-regional-clouddns--no-cloudscope",
+          "permission": "container.clusters.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "container.googleapis.com",
+            "name": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-regional-clouddns--no-cloudscope",
+            "type": "container.googleapis.com/Cluster"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-regional-clouddns--no-cloudscope",
+      "request": {
+        "@type": "type.googleapis.com/google.container.v1alpha1.CreateClusterRequest",
+        "cluster": {
+          "network": "projects/prj-se-arunima-e399/global/networks/test-vpc",
+          "location": "us-central1",
+          "shieldedNodes": {},
+          "name": "cluster-regional-clouddns--no-cloudscope",
+          "controlPlaneEndpointsConfig": {
+            "ipEndpointsConfig": {
+              "enabled": true,
+              "globalAccess": false,
+              "authorizedNetworksConfig": {},
+              "enablePublicEndpoint": true
+            }
+          },
+          "binaryAuthorization": {
+            "evaluationMode": "DISABLED"
+          },
+          "notificationConfig": {},
+          "enterpriseConfig": {},
+          "databaseEncryption": {},
+          "ipAllocationPolicy": {
+            "stackType": "IPV4",
+            "useIpAliases": true
+          },
+          "monitoringConfig": {
+            "managedPrometheusConfig": {
+              "enabled": true,
+              "autoMonitoringConfig": {}
+            },
+            "componentConfig": {
+              "enableComponents": [
+                "SYSTEM_COMPONENTS",
+                "STORAGE",
+                "POD",
+                "DEPLOYMENT",
+                "STATEFULSET",
+                "DAEMONSET",
+                "HPA",
+                "CADVISOR",
+                "KUBELET"
+              ]
+            }
+          },
+          "securityPostureConfig": {},
+          "defaultMaxPodsConstraint": {},
+          "loggingConfig": {
+            "componentConfig": {
+              "enableComponents": [
+                "SYSTEM_COMPONENTS",
+                "WORKLOADS"
+              ]
+            }
+          },
+          "networkConfig": {
+            "datapathProvider": "LEGACY_DATAPATH",
+            "dnsConfig": {
+              "clusterDnsScope": "VPC_SCOPE",
+              "clusterDns": "CLOUD_DNS"
+            },
+            "defaultEnablePrivateNodes": true
+          },
+          "secretManagerConfig": {},
+          "addonsConfig": {
+            "httpLoadBalancing": {},
+            "rayOperatorConfig": {},
+            "gcePersistentDiskCsiDriverConfig": {
+              "enabled": true
+            },
+            "horizontalPodAutoscaling": {},
+            "dnsCacheConfig": {},
+            "gcsFuseCsiDriverConfig": {}
+          },
+          "releaseChannel": {
+            "channel": "REGULAR"
+          },
+          "nodePools": [
+            {
+              "initialNodeCount": 1,
+              "queuedProvisioning": {},
+              "upgradeSettings": {
+                "strategy": "SURGE",
+                "maxSurge": 1
+              },
+              "autoscaling": {},
+              "management": {
+                "autoUpgrade": true,
+                "autoRepair": true
+              },
+              "networkConfig": {},
+              "config": {
+                "advancedMachineFeatures": {
+                  "enableNestedVirtualization": false
+                },
+                "machineType": "e2-medium",
+                "resourceManagerTags": {},
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "diskSizeGb": 100,
+                "imageType": "COS_CONTAINERD",
+                "diskType": "pd-balanced",
+                "serviceAccount": "test-806@prj-se-arunima-e399.iam.gserviceaccount.com",
+                "shieldedInstanceConfig": {}
+              },
+              "name": "default-pool"
+            }
+          ],
+          "subnetwork": "projects/prj-se-arunima-e399/regions/us-central1/subnetworks/test-vpc",
+          "nodePoolAutoConfig": {
+            "resourceManagerTags": {}
+          },
+          "autoscaling": {},
+          "networkPolicy": {},
+          "initialClusterVersion": "1.31.4-gke.1372000",
+          "authenticatorGroupsConfig": {}
+        },
+        "parent": "projects/prj-se-arunima-e399/locations/us-central1"
+      },
+      "response": {
+        "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/clusters/cluster-regional-clouddns--no-cloudscope",
+        "operationType": "CREATE_CLUSTER",
+        "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+        "name": "operation-1739362844296-c3eaf609-8071-414e-83ec-86237485c900",
+        "startTime": "2025-02-12T12:20:44.296637625Z",
+        "status": "RUNNING",
+        "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/operations/operation-1739362844296-c3eaf609-8071-414e-83ec-86237485c900"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "policyViolationInfo": {
+        "orgPolicyViolationInfo": {}
+      }
+    },
+    "insertId": "1b6g7c3e1slmj",
+    "resource": {
+      "type": "gke_cluster",
+      "labels": {
+        "cluster_name": "cluster-regional-clouddns--no-cloudscope",
+        "location": "us-central1",
+        "project_id": "prj-se-arunima-e399"
+      }
+    },
+    "timestamp": "2025-02-12T12:20:44.544062410Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739362844296-c3eaf609-8071-414e-83ec-86237485c900",
+      "producer": "container.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-02-12T12:20:45.359272266Z"
+  }

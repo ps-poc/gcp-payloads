@@ -1,0 +1,72 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "arudhar1@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "2401:4900:1c43:ca44:ccb5:74f:3528:fd01",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "container.googleapis.com",
+      "methodName": "google.container.v1.ClusterManager.UpdateCluster",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-with-no-shieldednodes-zonal1",
+          "permission": "container.clusters.update",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "container.googleapis.com",
+            "name": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-with-no-shieldednodes-zonal1",
+            "type": "container.googleapis.com/Cluster"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-with-no-shieldednodes-zonal1",
+      "request": {
+        "update": {
+          "desiredShieldedNodes": {}
+        },
+        "name": "projects/prj-se-arunima-e399/locations/us-central1-c/clusters/cluster-with-no-shieldednodes-zonal1",
+        "@type": "type.googleapis.com/google.container.v1alpha1.UpdateClusterRequest"
+      },
+      "response": {
+        "name": "operation-1739350826253-1ec38804-137f-4600-bbd9-2015f0b83277",
+        "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/operations/operation-1739350826253-1ec38804-137f-4600-bbd9-2015f0b83277",
+        "operationType": "UPDATE_CLUSTER",
+        "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/clusters/cluster-with-no-shieldednodes-zonal1",
+        "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+        "status": "RUNNING",
+        "startTime": "2025-02-12T09:00:26.253025599Z"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1-c"
+        ]
+      },
+      "policyViolationInfo": {
+        "orgPolicyViolationInfo": {}
+      }
+    },
+    "insertId": "3cuvg9d2j84",
+    "resource": {
+      "type": "gke_cluster",
+      "labels": {
+        "project_id": "prj-se-arunima-e399",
+        "location": "us-central1-c",
+        "cluster_name": "cluster-with-no-shieldednodes-zonal1"
+      }
+    },
+    "timestamp": "2025-02-12T09:00:26.434994169Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739350826253-1ec38804-137f-4600-bbd9-2015f0b83277",
+      "producer": "container.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-02-12T09:00:27.259758098Z"
+  }

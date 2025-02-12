@@ -1,0 +1,72 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "arudhar1@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "2401:4900:1c43:ca44:ccb5:74f:3528:fd01",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "container.googleapis.com",
+      "methodName": "google.container.v1.ClusterManager.UpdateCluster",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-no-shieldednodes-regional",
+          "permission": "container.clusters.update",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "container.googleapis.com",
+            "name": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-no-shieldednodes-regional",
+            "type": "container.googleapis.com/Cluster"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-no-shieldednodes-regional",
+      "request": {
+        "@type": "type.googleapis.com/google.container.v1alpha1.UpdateClusterRequest",
+        "update": {
+          "desiredShieldedNodes": {}
+        },
+        "name": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-no-shieldednodes-regional"
+      },
+      "response": {
+        "status": "RUNNING",
+        "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/clusters/cluster-with-no-shieldednodes-regional",
+        "operationType": "UPDATE_CLUSTER",
+        "startTime": "2025-02-12T08:40:23.515373599Z",
+        "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/operations/operation-1739349623515-2bcefb25-b95b-471e-86b9-c13e86503f93",
+        "name": "operation-1739349623515-2bcefb25-b95b-471e-86b9-c13e86503f93",
+        "@type": "type.googleapis.com/google.container.v1alpha1.Operation"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "policyViolationInfo": {
+        "orgPolicyViolationInfo": {}
+      }
+    },
+    "insertId": "1qrn8o0e7ehjo",
+    "resource": {
+      "type": "gke_cluster",
+      "labels": {
+        "project_id": "prj-se-arunima-e399",
+        "location": "us-central1",
+        "cluster_name": "cluster-with-no-shieldednodes-regional"
+      }
+    },
+    "timestamp": "2025-02-12T08:40:23.650754755Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739349623515-2bcefb25-b95b-471e-86b9-c13e86503f93",
+      "producer": "container.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-02-12T08:40:24.138353974Z"
+  }

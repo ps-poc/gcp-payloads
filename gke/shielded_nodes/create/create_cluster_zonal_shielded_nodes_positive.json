@@ -1,0 +1,39 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "serviceName": "container.googleapis.com",
+      "methodName": "google.container.v1beta1.ClusterManager.CreateCluster",
+      "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-with-shieldednodes-zonal",
+      "metadata": {
+        "operationType": "CREATE_CLUSTER",
+        "requestID": "0xf5d76fe9d144fef2"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1-c"
+        ]
+      },
+      "policyViolationInfo": {
+        "orgPolicyViolationInfo": {}
+      }
+    },
+    "insertId": "1v5mooadibg4",
+    "resource": {
+      "type": "gke_cluster",
+      "labels": {
+        "cluster_name": "cluster-with-shieldednodes-zonal",
+        "project_id": "prj-se-arunima-e399",
+        "location": "us-central1-c"
+      }
+    },
+    "timestamp": "2025-02-12T08:06:37.954066198Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739347283136-4d8b08d0-1872-4e42-9408-3174512f4e80",
+      "producer": "container.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2025-02-12T08:06:38.810244095Z"
+  }

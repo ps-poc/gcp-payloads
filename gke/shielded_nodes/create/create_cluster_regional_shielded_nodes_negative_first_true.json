@@ -1,0 +1,180 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "arudhar1@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "2401:4900:1c43:ca44:ccb5:74f:3528:fd01",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "container.googleapis.com",
+      "methodName": "google.container.v1beta1.ClusterManager.CreateCluster",
+      "authorizationInfo": [
+        {
+          "resource": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-shieldednodes-regional",
+          "permission": "container.clusters.create",
+          "granted": true,
+          "resourceAttributes": {
+            "service": "container.googleapis.com",
+            "name": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-shieldednodes-regional",
+            "type": "container.googleapis.com/Cluster"
+          },
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-with-shieldednodes-regional",
+      "request": {
+        "parent": "projects/prj-se-arunima-e399/locations/us-central1",
+        "@type": "type.googleapis.com/google.container.v1alpha1.CreateClusterRequest",
+        "cluster": {
+          "name": "cluster-with-shieldednodes-regional",
+          "defaultMaxPodsConstraint": {},
+          "secretManagerConfig": {},
+          "securityPostureConfig": {},
+          "addonsConfig": {
+            "horizontalPodAutoscaling": {},
+            "httpLoadBalancing": {},
+            "rayOperatorConfig": {},
+            "dnsCacheConfig": {},
+            "gcsFuseCsiDriverConfig": {},
+            "gcePersistentDiskCsiDriverConfig": {
+              "enabled": true
+            }
+          },
+          "authenticatorGroupsConfig": {},
+          "monitoringConfig": {
+            "managedPrometheusConfig": {
+              "autoMonitoringConfig": {},
+              "enabled": true
+            },
+            "componentConfig": {
+              "enableComponents": [
+                "SYSTEM_COMPONENTS",
+                "STORAGE",
+                "POD",
+                "DEPLOYMENT",
+                "STATEFULSET",
+                "DAEMONSET",
+                "HPA",
+                "CADVISOR",
+                "KUBELET"
+              ]
+            }
+          },
+          "notificationConfig": {},
+          "autoscaling": {},
+          "initialClusterVersion": "1.31.4-gke.1372000",
+          "binaryAuthorization": {
+            "evaluationMode": "DISABLED"
+          },
+          "loggingConfig": {
+            "componentConfig": {
+              "enableComponents": [
+                "SYSTEM_COMPONENTS",
+                "WORKLOADS"
+              ]
+            }
+          },
+          "databaseEncryption": {},
+          "nodePools": [
+            {
+              "upgradeSettings": {
+                "strategy": "SURGE",
+                "maxSurge": 1
+              },
+              "name": "default-pool",
+              "networkConfig": {},
+              "initialNodeCount": 3,
+              "config": {
+                "imageType": "COS_CONTAINERD",
+                "advancedMachineFeatures": {
+                  "enableNestedVirtualization": false
+                },
+                "serviceAccount": "test-806@prj-se-arunima-e399.iam.gserviceaccount.com",
+                "resourceManagerTags": {},
+                "metadata": {
+                  "disable-legacy-endpoints": "true"
+                },
+                "shieldedInstanceConfig": {},
+                "machineType": "e2-medium",
+                "diskType": "pd-balanced",
+                "diskSizeGb": 100
+              },
+              "management": {
+                "autoRepair": true,
+                "autoUpgrade": true
+              },
+              "autoscaling": {},
+              "queuedProvisioning": {}
+            }
+          ],
+          "ipAllocationPolicy": {
+            "stackType": "IPV4",
+            "useIpAliases": true
+          },
+          "enterpriseConfig": {},
+          "networkConfig": {
+            "defaultEnablePrivateNodes": true,
+            "datapathProvider": "LEGACY_DATAPATH"
+          },
+          "nodePoolAutoConfig": {
+            "resourceManagerTags": {}
+          },
+          "releaseChannel": {
+            "channel": "REGULAR"
+          },
+          "controlPlaneEndpointsConfig": {
+            "ipEndpointsConfig": {
+              "enablePublicEndpoint": true,
+              "authorizedNetworksConfig": {},
+              "globalAccess": false,
+              "enabled": true
+            }
+          },
+          "shieldedNodes": {},
+          "subnetwork": "projects/prj-se-arunima-e399/regions/us-central1/subnetworks/test-vpc",
+          "network": "projects/prj-se-arunima-e399/global/networks/test-vpc",
+          "networkPolicy": {},
+          "location": "us-central1"
+        }
+      },
+      "response": {
+        "status": "RUNNING",
+        "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/clusters/cluster-with-shieldednodes-regional",
+        "startTime": "2025-02-12T08:04:57.343429146Z",
+        "operationType": "CREATE_CLUSTER",
+        "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+        "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/locations/us-central1/operations/operation-1739347497343-f9008cfe-ad82-454c-b192-dbc92680548b",
+        "name": "operation-1739347497343-f9008cfe-ad82-454c-b192-dbc92680548b"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      },
+      "policyViolationInfo": {
+        "orgPolicyViolationInfo": {}
+      }
+    },
+    "insertId": "sb9jkce25ukq",
+    "resource": {
+      "type": "gke_cluster",
+      "labels": {
+        "project_id": "prj-se-arunima-e399",
+        "location": "us-central1",
+        "cluster_name": "cluster-with-shieldednodes-regional"
+      }
+    },
+    "timestamp": "2025-02-12T08:04:57.428265644Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operation-1739347497343-f9008cfe-ad82-454c-b192-dbc92680548b",
+      "producer": "container.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2025-02-12T08:04:57.942662014Z"
+  }
