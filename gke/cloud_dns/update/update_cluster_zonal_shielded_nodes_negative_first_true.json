@@ -1,0 +1,75 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "arudhar1@publicisgroupe.net"
+    },
+    "requestMetadata": {
+      "callerIp": "223.233.84.65",
+      "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe),gzip(gfe)",
+      "requestAttributes": {},
+      "destinationAttributes": {}
+    },
+    "serviceName": "container.googleapis.com",
+    "methodName": "google.container.v1.ClusterManager.UpdateCluster",
+    "authorizationInfo": [
+      {
+        "resource": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-noclouddns-zonal",
+        "permission": "container.clusters.update",
+        "granted": true,
+        "resourceAttributes": {
+          "service": "container.googleapis.com",
+          "name": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-noclouddns-zonal",
+          "type": "container.googleapis.com/Cluster"
+        },
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-noclouddns-zonal",
+    "request": {
+      "update": {
+        "desiredDnsConfig": {
+          "clusterDnsScope": "CLUSTER_SCOPE",
+          "clusterDns": "CLOUD_DNS"
+        }
+      },
+      "name": "projects/prj-se-arunima-e399/locations/us-central1-c/clusters/cluster-noclouddns-zonal",
+      "@type": "type.googleapis.com/google.container.v1alpha1.UpdateClusterRequest"
+    },
+    "response": {
+      "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/operations/operation-1739426071290-5b88d3c8-3030-4728-8b23-269b73d8c9ff",
+      "operationType": "UPDATE_CLUSTER",
+      "startTime": "2025-02-13T05:54:31.290054814Z",
+      "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/clusters/cluster-noclouddns-zonal",
+      "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+      "status": "RUNNING",
+      "name": "operation-1739426071290-5b88d3c8-3030-4728-8b23-269b73d8c9ff"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1-c"
+      ]
+    },
+    "policyViolationInfo": {
+      "orgPolicyViolationInfo": {}
+    }
+  },
+  "insertId": "2jdubwdkpy0",
+  "resource": {
+    "type": "gke_cluster",
+    "labels": {
+      "project_id": "prj-se-arunima-e399",
+      "location": "us-central1-c",
+      "cluster_name": "cluster-noclouddns-zonal"
+    }
+  },
+  "timestamp": "2025-02-13T05:54:31.362730335Z",
+  "severity": "NOTICE",
+  "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "operation-1739426071290-5b88d3c8-3030-4728-8b23-269b73d8c9ff",
+    "producer": "container.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2025-02-13T05:54:32.013471067Z"
+}

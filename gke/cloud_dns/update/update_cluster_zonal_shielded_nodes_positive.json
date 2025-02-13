@@ -1,0 +1,39 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "serviceName": "container.googleapis.com",
+    "methodName": "google.container.v1.ClusterManager.UpdateCluster",
+    "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/cluster-noclouddns-zonal",
+    "metadata": {
+      "operationType": "UPDATE_CLUSTER",
+      "requestID": "0xc48620cd4acd87ba"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1-c"
+      ]
+    },
+    "policyViolationInfo": {
+      "orgPolicyViolationInfo": {}
+    }
+  },
+  "insertId": "2jdubwdkr4c",
+  "resource": {
+    "type": "gke_cluster",
+    "labels": {
+      "location": "us-central1-c",
+      "project_id": "prj-se-arunima-e399",
+      "cluster_name": "cluster-noclouddns-zonal"
+    }
+  },
+  "timestamp": "2025-02-13T06:02:18.788580314Z",
+  "severity": "NOTICE",
+  "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "operation-1739426071290-5b88d3c8-3030-4728-8b23-269b73d8c9ff",
+    "producer": "container.googleapis.com",
+    "last": true
+  },
+  "receiveTimestamp": "2025-02-13T06:02:19.108672034Z"
+}
