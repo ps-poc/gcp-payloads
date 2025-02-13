@@ -1,0 +1,21 @@
+{
+  "update": {
+    "desiredShieldedNodes": {
+      "enabled": true
+    }
+  }
+}
+
+
+{
+    "update": {
+      "desiredShieldedNodes": {
+        "enabled": false
+      }
+    }
+  }
+
+
+  projectId
+  zone
+  clusterId

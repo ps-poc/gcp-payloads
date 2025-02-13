@@ -1,0 +1,25 @@
+projectId
+  zone
+  clusterId
+
+
+  {
+  "update": {
+    "desiredDnsConfig": {
+      "clusterDns": "KUBE_DNS"
+    }
+  },
+}
+
+
+{
+  "update": {
+    "desiredDnsConfig": {
+      "clusterDns": "KUBE_DNS",
+      "clusterDnsScope": "VPC_SCOPE"
+      
+    }
+    
+  }
+  
+}

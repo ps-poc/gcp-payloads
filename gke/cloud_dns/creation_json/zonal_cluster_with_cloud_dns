@@ -1,0 +1,29 @@
+{
+  "cluster": {
+    "name": "test-cluster",
+    "initialNodeCount": 1,
+    "nodeConfig": {
+      "machineType": "e2-micro",
+      "shieldedInstanceConfig": {
+        "enableSecureBoot": true
+      },
+      "serviceAccount": "test-806@prj-se-arunima-e399.iam.gserviceaccount.com",
+      "diskSizeGb": 10,
+      "diskType": "pd-standard"
+    },
+    "legacyAbac": {
+      "enabled": true
+    },
+    "shieldedNodes": {
+      "enabled": true
+    },
+    "networkConfig": {
+      "dnsConfig": {
+        "clusterDns": "CLOUD_DNS",
+        "clusterDnsScope": "CLUSTER_SCOPE"
+      }
+    },
+    "network": "test-vpc"
+  },
+  "zone": "us-central1-c"
+}

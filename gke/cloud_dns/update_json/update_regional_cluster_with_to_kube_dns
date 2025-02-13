@@ -1,0 +1,20 @@
+{
+  "update": {
+    "desiredDnsConfig": {
+      "clusterDns": "CLOUD_DNS",
+      "clusterDnsScope": "CLUSTER_SCOPE"
+    }
+  }
+}
+
+
+{
+  "update": {
+    "desiredDnsConfig": {
+      "clusterDns": "KUBE_DNS"
+    }
+  }
+}
+
+
+projects/prj-se-arunima-e399/locations/us-central1/clusters/cluster-1-regional

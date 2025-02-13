@@ -1,0 +1,11 @@
+{
+  "update": {
+    "desiredDnsConfig": {
+      "clusterDns": "CLOUD_DNS",
+      "clusterDnsScope": "CLUSTER_SCOPE"
+      
+    }
+    
+  },
+  
+}
