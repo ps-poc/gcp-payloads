@@ -1,0 +1,1 @@
+An error occurred: <HttpError 400 when requesting https://monitoring.googleapis.com/v3/projects/prj-se-bhachikh-3fec/uptimeCheckConfigs?alt=json returned "Request contains an invalid argument.". Details: "Request contains an invalid argument.">
