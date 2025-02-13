@@ -1,0 +1,91 @@
+{
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "bhachikh@publicisgroupe.net",
+        "principalSubject": "user:bhachikh@publicisgroupe.net"
+      },
+      "requestMetadata": {
+        "callerIp": "103.88.86.86",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.2 Safari/605.1.15,gzip(gfe)",
+        "requestAttributes": {
+          "time": "2025-02-13T14:08:19.363939045Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "monitoring.googleapis.com",
+      "methodName": "google.monitoring.v3.UptimeCheckService.CreateUptimeCheckConfig",
+      "authorizationInfo": [
+        {
+          "resource": "664869673844",
+          "permission": "monitoring.uptimeCheckConfigs.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/prj-se-bhachikh-3fec",
+      "request": {
+        "@type": "type.googleapis.com/google.monitoring.v3.CreateUptimeCheckConfigRequest",
+        "uptimeCheckConfig": {
+          "monitoredResource": {
+            "type": "cloud_run_revision",
+            "labels": {
+              "location": "us-east4",
+              "service_name": "fun1",
+              "configuration_name": "fun1",
+              "revision_name": "",
+              "project_id": "prj-se-ravavula-8fcb"
+            }
+          },
+          "displayName": "test-uptime-check",
+          "httpCheck": {
+            "validateSsl": false,
+            "useSsl": true,
+            "port": 443,
+            "requestMethod": "GET"
+          },
+          "period": "60s",
+          "timeout": "10s"
+        },
+        "parent": "projects/prj-se-bhachikh-3fec"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.monitoring.v3.UptimeCheckConfig",
+        "timeout": "10s",
+        "monitoredResource": {
+          "type": "cloud_run_revision",
+          "labels": {
+            "service_name": "fun1",
+            "project_id": "prj-se-ravavula-8fcb",
+            "location": "us-east4",
+            "configuration_name": "",
+            "revision_name": ""
+          }
+        },
+        "displayName": "test-uptime-check",
+        "httpCheck": {
+          "port": 443,
+          "path": "/",
+          "requestMethod": "GET",
+          "useSsl": true
+        },
+        "name": "projects/prj-se-bhachikh-3fec/uptimeCheckConfigs/test-uptime-check-NhH5zvwZT2c",
+        "period": "60s"
+      }
+    },
+    "insertId": "1noco6uf5ohjqi",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "monitoring.googleapis.com",
+        "method": "google.monitoring.v3.UptimeCheckService.CreateUptimeCheckConfig",
+        "project_id": "prj-se-bhachikh-3fec"
+      }
+    },
+    "timestamp": "2025-02-13T14:08:19.352823854Z",
+    "severity": "NOTICE",
+    "logName": "projects/prj-se-bhachikh-3fec/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2025-02-13T14:08:19.990380981Z"
+  }
