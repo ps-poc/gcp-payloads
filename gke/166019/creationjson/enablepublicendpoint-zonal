@@ -1,0 +1,29 @@
+{
+    "cluster": {
+      "initialNodeCount": 1,
+      "nodeConfig": {
+        "machineType": "e2-micro",
+        "shieldedInstanceConfig": {
+          "enableSecureBoot": true
+        },
+        "serviceAccount": "test-806@prj-se-arunima-e399.iam.gserviceaccount.com",
+        "diskSizeGb": 10,
+        "diskType": "pd-standard"
+      },
+      "network": "test-vpc",
+      "shieldedNodes": {
+        "enabled": true
+      },
+      "name": "test-zonal-enable-private-endpoint",
+      "privateClusterConfig": {
+        "enablePrivateEndpoint": true
+      },
+      "privateClusterConfig": {
+        "enablePrivateNodes": true
+      },
+      "masterAuthorizedNetworksConfig": {
+        "enabled": true
+      }
+    },
+    "zone": "us-central1-c"
+  }

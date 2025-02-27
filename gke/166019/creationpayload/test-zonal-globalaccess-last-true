@@ -1,0 +1,39 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "status": {},
+    "serviceName": "container.googleapis.com",
+    "methodName": "google.container.v1.ClusterManager.CreateCluster",
+    "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-globalaccess",
+    "metadata": {
+      "operationType": "CREATE_CLUSTER",
+      "requestID": "0xcdd1d799bd428bb3"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1-c"
+      ]
+    },
+    "policyViolationInfo": {
+      "orgPolicyViolationInfo": {}
+    }
+  },
+  "insertId": "tprem2dbgnj",
+  "resource": {
+    "type": "gke_cluster",
+    "labels": {
+      "project_id": "prj-se-arunima-e399",
+      "cluster_name": "test-zonal-globalaccess",
+      "location": "us-central1-c"
+    }
+  },
+  "timestamp": "2025-02-27T11:30:50.372222514Z",
+  "severity": "NOTICE",
+  "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "operation-1740655524653-894e4651-2dea-485c-85e6-5e324b91dbfa",
+    "producer": "container.googleapis.com",
+    "last": true
+  },
+  "receiveTimestamp": "2025-02-27T11:30:50.484682795Z"
+}

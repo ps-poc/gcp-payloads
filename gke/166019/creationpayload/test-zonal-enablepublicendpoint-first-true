@@ -1,0 +1,83 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "arudhar1@publicisgroupe.net",
+      "principalSubject": "user:arudhar1@publicisgroupe.net"
+    },
+    "requestMetadata": {
+      "callerIp": "2401:4900:1c43:ca44:b111:8306:8afd:98ab",
+      "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe)",
+      "requestAttributes": {},
+      "destinationAttributes": {}
+    },
+    "serviceName": "container.googleapis.com",
+    "methodName": "google.container.v1.ClusterManager.CreateCluster",
+    "authorizationInfo": [
+      {
+        "resource": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-enablepublicendpoint",
+        "permission": "container.clusters.create",
+        "granted": true,
+        "resourceAttributes": {
+          "service": "container.googleapis.com",
+          "name": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-enablepublicendpoint",
+          "type": "container.googleapis.com/Cluster"
+        },
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-enablepublicendpoint",
+    "request": {
+      "cluster": {
+        "shieldedNodes": {},
+        "privateClusterConfig": {},
+        "controlPlaneEndpointsConfig": {
+          "ipEndpointsConfig": {
+            "enablePublicEndpoint": false
+          }
+        },
+        "network": "test-vpc",
+        "networkConfig": {
+          "dnsConfig": {}
+        },
+        "name": "test-zonal-enablepublicendpoint"
+      },
+      "@type": "type.googleapis.com/google.container.v1alpha1.CreateClusterRequest"
+    },
+    "response": {
+      "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+      "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/operations/operation-1740653025205-b19932e2-f52e-4291-a349-e1e0414ba895",
+      "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/clusters/test-zonal-enablepublicendpoint",
+      "operationType": "CREATE_CLUSTER",
+      "startTime": "2025-02-27T10:43:45.205801278Z",
+      "status": "RUNNING",
+      "name": "operation-1740653025205-b19932e2-f52e-4291-a349-e1e0414ba895"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1-c"
+      ]
+    },
+    "policyViolationInfo": {
+      "orgPolicyViolationInfo": {}
+    }
+  },
+  "insertId": "tprem2db8ak",
+  "resource": {
+    "type": "gke_cluster",
+    "labels": {
+      "project_id": "prj-se-arunima-e399",
+      "cluster_name": "test-zonal-enablepublicendpoint",
+      "location": "us-central1-c"
+    }
+  },
+  "timestamp": "2025-02-27T10:43:45.261383790Z",
+  "severity": "NOTICE",
+  "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "operation-1740653025205-b19932e2-f52e-4291-a349-e1e0414ba895",
+    "producer": "container.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2025-02-27T10:43:45.678853361Z"
+}

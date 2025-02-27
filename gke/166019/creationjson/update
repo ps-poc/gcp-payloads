@@ -1,0 +1,13 @@
+{
+  "update": {
+    "desiredControlPlaneEndpointsConfig": {
+      "ipEndpointsConfig": {
+        "globalAccess": false,
+        "enablePublicEndpoint": false
+      }
+    },
+    "desiredPrivateClusterConfig": {
+      "enablePrivateEndpoint": false
+    }
+  }
+}

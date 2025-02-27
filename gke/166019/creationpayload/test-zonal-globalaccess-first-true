@@ -1,0 +1,80 @@
+{
+  "protoPayload": {
+    "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+    "authenticationInfo": {
+      "principalEmail": "arudhar1@publicisgroupe.net",
+      "principalSubject": "user:arudhar1@publicisgroupe.net"
+    },
+    "requestMetadata": {
+      "callerIp": "2401:4900:1c43:ca44:b111:8306:8afd:98ab",
+      "callerSuppliedUserAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36,gzip(gfe)",
+      "requestAttributes": {},
+      "destinationAttributes": {}
+    },
+    "serviceName": "container.googleapis.com",
+    "methodName": "google.container.v1.ClusterManager.CreateCluster",
+    "authorizationInfo": [
+      {
+        "resource": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-globalaccess",
+        "permission": "container.clusters.create",
+        "granted": true,
+        "resourceAttributes": {
+          "service": "container.googleapis.com",
+          "name": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-globalaccess",
+          "type": "container.googleapis.com/Cluster"
+        },
+        "permissionType": "ADMIN_WRITE"
+      }
+    ],
+    "resourceName": "projects/prj-se-arunima-e399/zones/us-central1-c/clusters/test-zonal-globalaccess",
+    "request": {
+      "@type": "type.googleapis.com/google.container.v1alpha1.CreateClusterRequest",
+      "cluster": {
+        "network": "test-vpc",
+        "shieldedNodes": {},
+        "name": "test-zonal-globalaccess",
+        "controlPlaneEndpointsConfig": {
+          "ipEndpointsConfig": {
+            "globalAccess": false
+          }
+        },
+        "privateClusterConfig": {}
+      }
+    },
+    "response": {
+      "status": "RUNNING",
+      "targetLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/clusters/test-zonal-globalaccess",
+      "startTime": "2025-02-27T11:25:24.653764266Z",
+      "@type": "type.googleapis.com/google.container.v1alpha1.Operation",
+      "name": "operation-1740655524653-894e4651-2dea-485c-85e6-5e324b91dbfa",
+      "selfLink": "https://container.googleapis.com/v1alpha1/projects/588911100123/zones/us-central1-c/operations/operation-1740655524653-894e4651-2dea-485c-85e6-5e324b91dbfa",
+      "operationType": "CREATE_CLUSTER"
+    },
+    "resourceLocation": {
+      "currentLocations": [
+        "us-central1-c"
+      ]
+    },
+    "policyViolationInfo": {
+      "orgPolicyViolationInfo": {}
+    }
+  },
+  "insertId": "tprem2dbfqh",
+  "resource": {
+    "type": "gke_cluster",
+    "labels": {
+      "cluster_name": "test-zonal-globalaccess",
+      "location": "us-central1-c",
+      "project_id": "prj-se-arunima-e399"
+    }
+  },
+  "timestamp": "2025-02-27T11:25:24.745139157Z",
+  "severity": "NOTICE",
+  "logName": "projects/prj-se-arunima-e399/logs/cloudaudit.googleapis.com%2Factivity",
+  "operation": {
+    "id": "operation-1740655524653-894e4651-2dea-485c-85e6-5e324b91dbfa",
+    "producer": "container.googleapis.com",
+    "first": true
+  },
+  "receiveTimestamp": "2025-02-27T11:25:25.403293534Z"
+}
